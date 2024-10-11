@@ -1,0 +1,11 @@
+%{
+#include<stdio.h>
+%}
+%%
+[\n]{printf("Hello World");}
+%%
+main()
+{
+yylex();
+}
+Int yywrap(){return 1;}
